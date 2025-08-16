@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith's Portfolio</title>
+    <script src="https://kit.fontawesome.com/073f66530f.js" crossorigin="anonymous"></script>
+    <style>
+       body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #e0f7fa;
+    color: #333;
+    padding-top: 180px; 
+}
+
+        header {
+            background: linear-gradient(90deg, #007BFF, #00BCD4);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        .resume-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #007BFF;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .resume-btn:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+        #icon1{
+            color: yellow;
+        }
+        section {
+            background-color: white;
+            margin: 20px auto;
+            margin-top: 70px;
+            max-width: 800px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+        .Education li{
+           margin: 10px 0;
+           cursor: pointer;
+           color: #007BFF;
+        }
+        .Education li:hover{
+            text-decoration: underline;
+        }
+        .Education-details{
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #007BFF;
+        }
+        .skills span {
+            display: inline-block;
+            background-color: #f1f1f1;
+            margin: 5px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .projects li {
+            margin: 10px 0;
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .projects li:hover {
+            text-decoration: underline;
+        }
+        .project-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #007BFF;
+        }
+        .Internships li{
+            margin: 10px 0;
+            cursor: pointer;
+            color: #007BFF; 
+        }
+        .internships li:hover{
+            text-decoration: underline;
+        }
+        .Internship-details{
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #007BFF;
+        }
+        .certifications li{
+            margin: 10px 0;
+            cursor: pointer;
+            color: #007BFF; 
+        }
+        .certifications li:hover{
+            text-decoration: underline;
+        }
+        .certificates{
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #007BFF;
+        }
+        section ul li img {
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 200px; 
+}
+@media (max-width: 600px) {
+    main {
+        margin-top: 220px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hello, I'm Rohith <i id="icon1" class="fa-solid fa-hand"></i></h1>
+    <p>Full Stack Developer</p>
+    <div class="social-icons">
+        <a href="mailto:rohitrasani@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/rohith-rasani-aa6b82316" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/919347553214" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <a href="Rasani Rohith.pdf" download><button class="resume-btn">Download Resume</button></a>
+</header>
+
+<section>
+    <h2><i class="fa-solid fa-file"></i> About Me</h2>
+    <p>I am a passionate Full Stack Developer with experience in Python, Django, HTML, CSS, JavaScript, and React. I love building scalable and user-friendly web applications. Always eager to learn and work on challenging real-world projects.</p>
+</section>
+
+<section class="Education">
+    <h2><i class="fa-solid fa-book"></i>Education</h2>
+    <ul>
+        <li onclick="toggleDetails('id1')">BTech</li>
+        <div id="id1" class="Education-details" ><b>Bachelor of Technology/Engineering in [Mechanical]                  [2020 – 2024]</b><br>
+       PBR Visvodaya Institute Of Technology And Science, Jawaharlal Nehru Technological University Anantapur<br>
+       <b>Percentage</b>: 69.34
+        </div>
+
+        <li onclick="toggleDetails('id2')">Intermediate</li>
+        <div id="id2" class="Education-details" >Sai Cooperative Jr College,Kavali  [MPC]   [2018-2020]<br>
+        <b>Percentage</b>:82.2</div>
+
+        <li onclick="toggleDetails('id3')">10th</li>
+        <div id="id3" class="Education-details" >Narayana E-techno HighSchool,Kavali   [2018]<br>
+        <b>Percentage</b>:83.3</div>
+    </ul>
+</section>
+
+<section  class="skills">
+    <h2><i class="fa-solid fa-fire"></i> Skills</h2>
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>React Js</span>
+    <span>Django</span>
+    <span>PYTHON</span>
+    <span>Mysql</span>
+    <span>BooTstrap</span>
+    <span>Responsive Web Design</span>
+</section>
+
+<section class="projects">
+    <h2><i class="fa-solid fa-folder"></i> Projects</h2>
+    <ul>
+        <li onclick="toggleDetails('p1')"> Student Management System</li>
+        <div id="p1" class="project-details">
+            ● <b>Description</b>: Centralized database to store and manage student records, including personal details, academic performance, attendance, and disciplinary history.<br>
+            Secure login access for authorized personnel to update and maintain student information.<br>
+            Option to generate unique identification numbers (IDs) for each student for easy tracking.<br>
+            ● <b>Responsibilities</b>: 
+            <ul>
+                <li>Student Information Management</li>
+                <li>Enrollment and Admission</li>
+                <li>Update & Delete Records</li>
+            </ul>
+            ● <b>Technologies Used</b>: Django, HTML5, CSS3, MySQL <br><br>
+            <img src="project1.png" alt="Project1" width="100%">
+        </div>
+
+        <li onclick="toggleDetails('p2')">Shoppers</li>
+        <div id="p2" class="project-details">
+            • <b>Description</b>: Designed a user-friendly interface ensuring a seamless shopping experience.<br>
+            • <b>Responsibilities</b>: Translated design mockups and user stories into fully functional web pages using HTML, CSS,React js and JavaScript.<br>
+            - Implemented responsive design principles to ensure compatibility across various devices and screen sizes, enhancing accessibility for all users.<br>
+            - user authentication, ensuring secure and efficient data exchange.<br>
+            - Conducted thorough testing and debugging to identify and resolve any issues or inconsistencies, ensuring a smooth and error-free browsing experience.
+             <br>
+            • <b>Skills Used</b>: HTML5, CSS3, JavaScript, React Js, Responsive Web Design <br><br>
+            <!-- <video width="100%" controls>
+                <source src="project recording.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        </div>
+        <li onclick="toggleDetails('p3')">Image Classification Using CNN</li>
+        <div id="p3" class="project-details">
+              <b>Image Classification Using CNN</b><br>
+              <b>Description: </b>A labeled image dataset consisting of various categories for classification tasks. Each class is represented as a folder containing relevant images.<br>
+              <b>Project Objective:</b>To develop a deep learning model using Convolutional Neural Networks (CNNs) that can efficiently identify and classify images into their respective categories from a custom Kaggle dataset.<br>
+
+              <b> Tools & Technologies Used</b><br>
+              <b>Language: </b>Python<br>
+
+              <b>Framework: </b>TensorFlow & Keras<br>
+
+              <b>Platform: </b>Google Colab<br>
+
+              <b>Visualization: </b>Matplotlib<br>
+
+              <b>Dataset Handling: </b>KaggleHub, TensorFlow image_dataset_from_directory<br>
+
+              <b>Storage: </b>Google Drive (model and dataset path)<br>
+
+
+
+
+              
+
+              Built and trained a Convolutional Neural Network (CNN) using TensorFlow/Keras to classify images across multiple classes from the Kaggle Images Dataset.<br>
+
+              Utilized Google Colab for training, and KaggleHub for automated dataset download and integration.<br>
+
+              Preprocessed images to standardize input dimensions and pixel scaling (132x132, normalized using Rescaling(1./255)).<br>
+
+             <b> Designed a CNN architecture:</b>
+
+              3 Convolutional layers with increasing filters (32, 64, 128), ReLU activation, and max pooling.<br>
+
+              Fully connected layers including a dense layer with 128 neurons and final softmax layer to predict class probabilities.<br>
+
+              Split data into training (80%) and validation (20%) using TensorFlow’s image_dataset_from_directory and .take()/.skip() methods.<br>
+
+              Achieved high validation accuracy, visualized training metrics using Matplotlib.<br>
+
+             Saved the trained model in .keras format to Google Drive for deployment or future use.<br>
+
+
+        </div>
+        <li onclick="toggleDetails('p4')">Face Recognition Using PCA and ANN (Artificial Neural Networks)</li>
+        <div id="p4" class="project-details">
+            <b>Face Recognition Using PCA and ANN (Artificial Neural Networks)</b><br>
+            ● Designed and implemented a face recognition system using Principal Component Analysis (PCA) for feature extraction and an Artificial Neural Network (ANN) for classification.<br><br>
+
+            ● Preprocessed grayscale face images and transformed them into 1D vectors.<br><br>
+
+            ● Extracted eigenfaces by computing surrogate covariance and performing eigen decomposition.<br><br>
+
+            ● Generated face signatures and trained a backpropagation ANN using scikit-learn’s MLPClassifier.<br><br>
+
+            ● Evaluated model performance across varying PCA components (k) and tested robustness with imposters.<br><br>
+
+            ● Achieved high accuracy and visualized performance trends with matplotlib.<br><br>
+
+            <b>Tools & Technologies: </b>Python, NumPy, OpenCV, Scikit-learn, Matplotlib
+            <img src="frproject.png" alt="Project4" width="100%">
+        </div>
+
+        <li onclick="toggleDetails('p5')">MovieInfo Web Application</li>
+        <div id="p5" class="project-details">
+            <b>MovieInfo Web Application</b>
+            <b>Description</b>
+            <p>● MovieInfo is a React-based web application that allows users to search for movies and instantly retrieve details such as the movie name, director, plot synopsis, and other related information.<br><br>
+               ● The application integrates with the OMDb API to fetch accurate and real-time movie data.<br><br>
+               ● To ensure secure user management, Firebase Authentication is implemented, enabling users to sign up, log in, and log out securely.<br><br>
+               ● The app also uses Firebase’s real-time authentication state tracking to manage session handling without manual refreshes.<br><br></p>
+
+            <b>Technologies Used</b>
+            <b>Frontend:</b> React.js, JavaScript (ES6+), HTML5, CSS3
+
+            <b>Backend/Services:</b> Firebase Authentication, Firebase SDK
+
+            <b>API:</b> OMDb API (Open Movie Database API) for movie information retrieval
+
+            <b>Tools & Libraries:</b>
+
+            <p>firebase/app and firebase/auth for authentication<br>
+
+               React Hooks (useState, useEffect) for state management<br>
+
+               fetch API for HTTP requests to OMDb<br></p>
+
+            <b>Version Control: </b>Git, GitHub
+            <img src="movieinfo.png" alt="Project5" width="100%">
+        </div>
+    </ul>
+</section>
+
+
+<section class="Internships">
+    <h2><i class="fa-solid fa-laptop-code"></i>  Internships</h2>
+    <ul>
+        <li onclick="toggleDetails('para1')"><b>ARTIFICIAL INTELLIGENCE - Image Classification (Internz Learn)</b></li>
+        <div id="para1" class="Internship-details">
+            <p><b>Project:</b> <strong>Image Classification Using Neural Networks on Kaggle Dataset</strong><br>
+            • Developed an image classification model using CNNs to categorize images from the Kaggle dataset.<br>
+            • Used TensorFlow/Keras’s `image_dataset_from_directory` for preprocessing and efficient batch loading.<br>
+            • Rescaled images for normalization, improving training convergence.<br>
+            • Visualized training/validation accuracy with matplotlib.<br>
+            • Saved the model for deployment or transfer learning.<br>
+            • Achieved a robust model with strong generalization ability.<br></p>
+        </div>
+
+        <li onclick="toggleDetails('para2')"><b>Face Recognition - PCA & ANN (Internship Studio)</b></li>
+        <div id="para2" class="Internship-details">
+            <p><b>Project:</b> <strong>Face Recognition Using PCA and ANN</strong><br>
+            • Built a facial recognition system using PCA and Multi-layer Perceptron (MLP) Neural Networks.<br>
+            • Preprocessed grayscale images (300×300), flattened to 1D vectors.<br>
+            • Extracted 150 eigenfaces via PCA, and enhanced separation with LDA.<br>
+            • Trained MLP (two hidden layers: 10-10) using scikit-learn’s `MLPClassifier`.<br>
+            • Evaluated using accuracy/confidence scores, and visualized with matplotlib.<br>
+            • Achieved high accuracy, validated generalization on unknown faces.<br></p>
+        </div>
+    </ul>
+</section>
+
+
+<section class="certifications">
+    <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+    <ul>
+        <li onclick="toggleDetails('cert1')">Python Full Stack Developer from Issuing Saag Technologies Pvt Ltd (07/2024 – 01/2025)</li>
+        <div id="cert1" class="certificates">
+            <img src="saagcertificate.jpg" alt="Python Cert" width="100%">
+        </div>
+
+        <li onclick="toggleDetails('cert2')">Artificial Intelligence from Internz Learn (02/2025 – 04/2025)</li>
+        <div id="cert2" class="certificates">
+            <img src="internzlearn.png" alt="AI Cert" width="100%">
+        </div>
+        <li onclick="toggleDetails('cert3')">Artificial Intelligence from Internship Studio (06/2025 - 07/2025)</li>
+        <div id="cert3" class="certificates">
+            <img src="AI INTERNSHIP.png" alt="Python Programming Cert" width="100%">
+        </div>
+
+        <li onclick="toggleDetails('cert4')">Python Programming from Elewayte (07/2023)</li>
+        <div id="cert4" class="certificates">
+            <img src="elewayte.jpg" alt="Python Programming Cert" width="100%">
+        </div>
+    </ul>
+</section>
+
+
+
+<script>
+    function toggleDetails(id) {
+        const element = document.getElementById(id);
+        element.style.display = element.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
+
+
