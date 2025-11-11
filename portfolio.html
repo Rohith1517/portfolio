@@ -169,12 +169,14 @@ body {
         <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://wa.me/919347553214" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
-    <a href="ROHIT_FULLSTACK.pdf" download><button class="resume-btn">Download Resume</button></a>
+    <a href="R ROHITH.pdf" download><button class="resume-btn">Download Resume</button></a>
 </header>
 
 <section>
     <h2><i class="fa-solid fa-file"></i> About Me</h2>
-    <p>I am a passionate Full Stack Developer with experience in Python, Django, HTML, CSS, JavaScript, and React. I love building scalable and user-friendly web applications. Always eager to learn and work on challenging real-world projects.</p>
+    <p>Python Full Stack Developer skilled in Python, Django, React.js, APIs, and MySQL, with experience in Building
+scalable web applications and AI/ML projects. Proficient in Agile development, Git/GitHub ,cloud usage(Firebase),
+strong problem-solving and teamwork abilities.</p>
 </section>
 
 <section class="Education">
@@ -207,6 +209,8 @@ body {
     <span>Mysql</span>
     <span>BooTstrap</span>
     <span>Responsive Web Design</span>
+    <span>Numpy</span>
+    <span>Pandas</span>
 </section>
 
 <section class="projects">
@@ -215,7 +219,7 @@ body {
         <li onclick="toggleDetails('p1')"> Student Management System</li>
         <div id="p1" class="project-details">
             ● <b>Description</b>: Centralized database to store and manage student records, including personal details, academic performance, attendance, and disciplinary history.<br>
-            Secure login access for authorized personnel to update and maintain student information.<br>
+            Secure login access for authorized personal to update and maintain student information.<br>
             Option to generate unique identification numbers (IDs) for each student for easy tracking.<br>
             ● <b>Responsibilities</b>: 
             <ul>
@@ -223,19 +227,19 @@ body {
                 <li>Enrollment and Admission</li>
                 <li>Update & Delete Records</li>
             </ul>
-            ● <b>Technologies Used</b>: Django, HTML5, CSS3, MySQL <br><br>
+            ● <b>Technologies Used</b>: Django, HTML5, CSS3, Python,BooTstrap,SQLite <br><br>
             <img src="project1.png" alt="Project1" width="100%">
         </div>
 
         <li onclick="toggleDetails('p2')">Shoppers</li>
         <div id="p2" class="project-details">
             • <b>Description</b>: Designed a user-friendly interface ensuring a seamless shopping experience.<br>
-            • <b>Responsibilities</b>: Translated design mockups and user stories into fully functional web pages using HTML, CSS,React js and JavaScript.<br>
-            - Implemented responsive design principles to ensure compatibility across various devices and screen sizes, enhancing accessibility for all users.<br>
-            - user authentication, ensuring secure and efficient data exchange.<br>
-            - Conducted thorough testing and debugging to identify and resolve any issues or inconsistencies, ensuring a smooth and error-free browsing experience.
+            • <b>Responsibilities</b>: Translated design mockups and user stories into fully functional web pages using HTML, CSS,Bootstrap,React js and JavaScript.<br>
+            -  Built a responsive e-commerce platform with product catalog, cart, and checkout features.<br>
+            - Developed React-based e-commerce frontend with dynamic product listing and cart management<br>
+.<br>       -  Integrated Firebase APIs for user authentication and cloud storage of login data (email/password)
              <br>
-            • <b>Skills Used</b>: HTML5, CSS3, JavaScript, React Js, Responsive Web Design <br><br>
+            • <b>Skills Used</b>: HTML5, CSS3, JavaScript, React Js, Responsive Web Design ,Bootstrap,Auth0,Firebase<br><br>
             <!-- <video width="100%" controls>
                 <source src="project recording.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -260,61 +264,49 @@ body {
 
               <b>Storage: </b>Google Drive (model and dataset path)<br>
 
+            •  Developed and trained a CNN-based image classification model using TensorFlow/Keras on a Kaggle dataset,
+              achieving robust performance on unseen data<br>
+            • Implemented data preprocessing, normalization, and data augmentation (random flips, rotations, andzoom) to enhance model generalization.<br>
 
+            • Added dropout layers and monitored training/validation performance to prevent overfitting and improve model reliability.<br>
+            
+            • Visualized training and validation accuracy and loss curves using Matplotlib to analyze and evaluatemodel performance.<br>
 
-
-              
-
-              Built and trained a Convolutional Neural Network (CNN) using TensorFlow/Keras to classify images across multiple classes from the Kaggle Images Dataset.<br>
-
-              Utilized Google Colab for training, and KaggleHub for automated dataset download and integration.<br>
-
-              Preprocessed images to standardize input dimensions and pixel scaling (132x132, normalized using Rescaling(1./255)).<br>
-
-             <b> Designed a CNN architecture:</b>
-
-              3 Convolutional layers with increasing filters (32, 64, 128), ReLU activation, and max pooling.<br>
-
-              Fully connected layers including a dense layer with 128 neurons and final softmax layer to predict class probabilities.<br>
-
-              Split data into training (80%) and validation (20%) using TensorFlow’s image_dataset_from_directory and .take()/.skip() methods.<br>
-
-              Achieved high validation accuracy, visualized training metrics using Matplotlib.<br>
-
-             Saved the trained model in .keras format to Google Drive for deployment or future use.<br>
+           
 
 
         </div>
         <li onclick="toggleDetails('p4')">Face Recognition Using PCA and ANN (Artificial Neural Networks)</li>
         <div id="p4" class="project-details">
             <b>Face Recognition Using PCA and ANN (Artificial Neural Networks)</b><br>
-            ● Designed and implemented a face recognition system using Principal Component Analysis (PCA) for feature extraction and an Artificial Neural Network (ANN) for classification.<br><br>
+            <b>Project objective:</b><p>Build a face recognition system using PCA for feature reduction and ANN for classification, enabling efficient and accurate recognition of unseen faces.</p><br>
+            ● Developed a face recognition system using PCA for feature extraction and ANN (MLPClassifier) for classification.<br><br>
 
             ● Preprocessed grayscale face images and transformed them into 1D vectors.<br><br>
 
-            ● Extracted eigenfaces by computing surrogate covariance and performing eigen decomposition.<br><br>
+            ● Preprocessed images with grayscale conversion, resizing, and normalization, ensuring consistent input for the model.br><br>
 
-            ● Generated face signatures and trained a backpropagation ANN using scikit-learn’s MLPClassifier.<br><br>
+            ● Split the dataset into training (70%) and testing (30%) sets using train_test_split.
 
-            ● Evaluated model performance across varying PCA components (k) and tested robustness with imposters.<br><br>
+            ● Trained and evaluated the ANN on PCA-transformed data, achieving up to 68% accuracy on unseen test images.<br><br>
 
-            ● Achieved high accuracy and visualized performance trends with matplotlib.<br><br>
+            ●  Visualized predictions and performance trends using Matplotlib, enhancing interpretability of model results.<br><br>
 
-            <b>Tools & Technologies: </b>Python, NumPy, OpenCV, Scikit-learn, Matplotlib
-            <img src="frproject.png" alt="Project4" width="100%">
+            <b>Tools & Technologies: </b>Python, NumPy, OpenCV, Scikit-learn, Matplotlib,google Colab
+            <img src="istudio.png" alt="Project4" width="100%">
         </div>
 
         <li onclick="toggleDetails('p5')">MovieInfo Web Application</li>
         <div id="p5" class="project-details">
-            <b>MovieInfo Web Application</b>
+            <b>MovieInfo Web Application</b><br>
             <b>Description</b>
             <p>● MovieInfo is a React-based web application that allows users to search for movies and instantly retrieve details such as the movie name, director, plot synopsis, and other related information.<br><br>
                ● The application integrates with the OMDb API to fetch accurate and real-time movie data.<br><br>
                ● To ensure secure user management, Firebase Authentication is implemented, enabling users to sign up, log in, and log out securely.<br><br>
                ● The app also uses Firebase’s real-time authentication state tracking to manage session handling without manual refreshes.<br><br></p>
 
-            <b>Technologies Used</b>
-            <b>Frontend:</b> React.js, JavaScript (ES6+), HTML5, CSS3
+             ● <b>Technologies Used</b>
+            <b>Frontend:</b> React.js, JavaScript , HTML5, CSS3
 
             <b>Backend/Services:</b> Firebase Authentication, Firebase SDK
 
@@ -331,6 +323,28 @@ body {
             <b>Version Control: </b>Git, GitHub
             <img src="movieinfo.png" alt="Project5" width="100%">
         </div>
+
+         <li onclick="toggleDetails('p6')">Students Mental Health</li>
+         <div id="p6" class="project-details">
+            <b>AI Mental Health Assistant</b><br>
+            <b>Project Objective:</b>
+            <p>Predict student depression risk using machine learning and provide personalized mental health guidance via an interactive web app based on sleep, stress, and study habits.</p>
+            <br>
+            <p>● Developed a depression prediction system by training a machine learning model on student data to predict depression risk.</p>
+            <p>● Preprocessed and encoded data, ensuring the model could effectively learn from categorical and numerical features.</p>
+            <p>● Evaluated model performance using accuracy and classification metrics, and analyzed feature importance to identify key factors influencing depression.</p>
+            <p>● Visualized insights to make predictions and feature contributions easily interpretable.</p>
+            <p>● Deployed an interactive web app that provides personalized mental health guidance based on user inputs such as sleep, stress, and study hours.</p>
+            <b>● Technologies Used:</b><p>Python,Scikit-learn,Matplotlib,seaborn,streamlit</p>
+            <img src="safe1.png" alt="Project6" width="100%">
+            <img src="safe2.png" alt="Project6" width="100%">
+            <img src="moderate1.png" alt="Project6" width="100%">
+            <img src="moderate2.png" alt="Project6" width="100%">
+            <img src="highrisk1.png" alt="Project6" width="100%">
+            <img src="highrisk2.png" alt="Project6" width="100%">
+
+
+         </div>
     </ul>
 </section>
 
@@ -341,23 +355,21 @@ body {
         <li onclick="toggleDetails('para1')"><b>ARTIFICIAL INTELLIGENCE - Image Classification (Internz Learn)</b></li>
         <div id="para1" class="Internship-details">
             <p><b>Project:</b> <strong>Image Classification Using Neural Networks on Kaggle Dataset</strong><br>
-            • Developed an image classification model using CNNs to categorize images from the Kaggle dataset.<br>
-            • Used TensorFlow/Keras’s `image_dataset_from_directory` for preprocessing and efficient batch loading.<br>
-            • Rescaled images for normalization, improving training convergence.<br>
-            • Visualized training/validation accuracy with matplotlib.<br>
-            • Saved the model for deployment or transfer learning.<br>
-            • Achieved a robust model with strong generalization ability.<br></p>
+            • Developed and trained a CNN-based image classification model using TensorFlow/Keras on a Kaggle dataset,achieving robust performance on unseen data.<br>
+            • Implemented data preprocessing, normalization, and data augmentation (random flips, rotations, and zoom) to enhance model generalization.<br>
+            • Added dropout layers and monitored training/validation performance to prevent overfitting and improve model reliability.<br>
+            • Visualized training and validation accuracy and loss curves using Matplotlib to analyze and evaluate model performance.<br>
+
         </div>
 
         <li onclick="toggleDetails('para2')"><b>Face Recognition - PCA & ANN (Internship Studio)</b></li>
         <div id="para2" class="Internship-details">
             <p><b>Project:</b> <strong>Face Recognition Using PCA and ANN</strong><br>
-            • Built a facial recognition system using PCA and Multi-layer Perceptron (MLP) Neural Networks.<br>
-            • Preprocessed grayscale images (300×300), flattened to 1D vectors.<br>
-            • Extracted 150 eigenfaces via PCA, and enhanced separation with LDA.<br>
-            • Trained MLP (two hidden layers: 10-10) using scikit-learn’s `MLPClassifier`.<br>
-            • Evaluated using accuracy/confidence scores, and visualized with matplotlib.<br>
-            • Achieved high accuracy, validated generalization on unknown faces.<br></p>
+            • Developed a face recognition system using PCA for feature extraction and ANN (MLPClassifier) for classification.<br>
+            • Preprocessed images with grayscale conversion, resizing, and normalization, ensuring consistent input for the model.<br>
+            • Trained and evaluated the ANN on PCA-transformed data, achieving up to 68% accuracy on unseen test images<br>
+            •Visualized predictions and performance trends using Matplotlib, enhancing interpretability of model results.<br>
+        
         </div>
 
         <li onclick="toggleDetails('para3')"><b>Web Design and Development (Internship Studio)</b></li>
@@ -367,14 +379,14 @@ body {
                  The project emphasized responsive UI design, seamless navigation, and optimized performance for better user experience.</p>
 
             <p><b>Contibution</b><br>
-            • Designed and implemented responsive web pages using HTML5, CSS3, JavaScript.<br>
+            • Designed and implemented responsive web pages using HTML5, CSS3, JavaScript,React Js,Bootstrap.<br>
             • Developed interactive features (product filters, dynamic search, add-to-cart functionality).<br>
             • Applied UI/UX principles to improve accessibility and user engagement.<br>
             • Optimized code for performance, scalability, and cross-browser compatibility.<br>
             • Collaborated in a team environment using Git & GitHub for version control.<br>
             </p>
             <p><b>Technologies used:</b><br>
-            HTML5,CSS3,JavaScript,React Js,Git & GitHub</p>
+            HTML5,CSS3,JavaScript,React Js,Bootstrap,Git & GitHub</p>
         </div>
     </ul>
 </section>
